@@ -86,3 +86,24 @@ print(c)
 number5 = int(input("다섯 번째 숫자를 입력해주세요.")) # 5
 d = (c + number5)
 print(d)
+
+# 3.
+
+sum = 0
+for i in range(1, 6):
+    sum += int(input(f'{i} 번째 숫자를 입력해주세요 > '))
+    print(sum)
+
+# 4.
+
+sum = 0
+sum += int(input('첫 번째 숫자를 입력해주세요 > '))
+print(sum)
+sum += int(input('두 번째 숫자를 입력해주세요 > '))
+print(sum)
+sum += int(input('세 번째 숫자를 입력해주세요 > '))
+print(sum)
+sum += int(input('네 번째 숫자를 입력해주세요 > '))
+print(sum)
+sum += int(input('다섯 번째 숫자를 입력해주세요 > '))
+print(sum)
