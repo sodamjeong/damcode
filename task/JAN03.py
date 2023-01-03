@@ -79,6 +79,7 @@ for idx in n[::-1]:
 # 정수 두 개를 입력 받고, 두 수 사이의 정수를 오름차순으로 출력하세요.
 # 두 값이 같으면 False를 출력하세요
 
+#1
 n = int(input('첫 번째 숫자를 입력하세요 > '))
 m = int(input('두 번째 숫자를 입력하세요 > '))
 
@@ -91,6 +92,15 @@ elif m>n:
 else:
     print(False)
 
+#2
+n = int(input("첫 번째 정수를 입력하세요 > "))
+m = int(input("두 번째 정수를 입력하세요 > "))
+
+for idx in range(min(n,m)+1, max(n,m)):
+    print(idx)
+if n == m:
+    print("False")
+
 # 문제 8
 # 정수 두 개를 입력 받고, 두 수 사이의 정수를 내림차순으로 
 # 한 줄에 모두 출력하세요. 두 값이 같으면 False를 출력하세요
@@ -98,6 +108,7 @@ else:
 n = int(input('첫 번째 숫자를 입력하세요 > '))
 m = int(input('두 번째 숫자를 입력하세요 > '))
 
+#1
 if n > m:
     for idx in range(n-1, m, -1):
         print(idx, end=" ")
@@ -106,6 +117,15 @@ elif m > n:
         print(idx, end=" ")
 else:
     print(False)
+
+#2
+n = int(input("첫 번째 정수를 입력하세요 > "))
+m = int(input("두 번째 정수를 입력하세요 > "))
+
+for idx in range(max(n,m)-1, min(n,m), -1):
+    print(idx, end=" ")
+if n == m:
+    print("False")
 
 # 문제 9
 # 정수 한 개를 입력 받고, 1 부터 입력 값 사이의 정수 중 홀수만 출력하세요.
