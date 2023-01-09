@@ -78,7 +78,7 @@ for i in n:
     if i not in dict:
         dict[i] = 1
     else:
-        dict[i] += 1
+        dict[i] += 1    
 
 for m in dict:
     print(m,dict[m])

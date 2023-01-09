@@ -114,7 +114,7 @@ except:
 
 try:
     number = 1
-    if number == 1
+    if number == 1:
         print(number)
 
 except:
