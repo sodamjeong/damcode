@@ -11,9 +11,9 @@
 # print(len(n))
 
 
-n = list(map(int,input().split()))
+# n = list(map(int,input().split()))
 
-print(*n) # 숫자만 나옴
+# print(*n) # 숫자만 나옴
 
-for m in n:
-    print(m, end=" ")
+# for m in n:
+#     print(m, end=" ")
