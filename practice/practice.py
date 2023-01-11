@@ -165,13 +165,49 @@
 #     print(key,end = " ")
 
 
-N, X = map(int,input().split())
-A = list(map(int,input().split()))
-n = []
+# N, X = map(int,input().split())
+# A = list(map(int,input().split()))
+# n = []
 
-for i in A:
-    if i < X:
-        n.append(i)
+# for i in A:
+#     if i < X:
+#         n.append(i)
 
-for a in n:
-    print(a,end=" ")
+# for a in n:
+#     print(a,end=" ")
+
+# def cube(x,y):
+#     return x + y, x - y
+
+# print(cube(3,5))
+
+# def cook(parameter):
+#     return 'good'
+
+# print(cook('argument'))
+
+# def add(*x):
+#         print(x)
+
+# add(1,2,3,4,5)
+
+# def family(**x):
+#     for key, value in x.items():
+#         print(key, ':', value)
+
+# family(father = 'dong', mother = 'lee', me = 'dami', brother = 'sung')
+
+# def fun():
+#     a = 20
+#     print(a)
+
+# fun()
+
+a = 10
+def fun():
+    global a
+    print(a)
+    a = 3
+
+fun()
+print(a)
