@@ -203,11 +203,39 @@
 
 # fun()
 
-a = 10
-def fun():
-    global a
-    print(a)
-    a = 3
+# a = 10
+# def fun():
+#     global a
+#     print(a)
+#     a = 3
 
-fun()
-print(a)
+# fun()
+# print(a)
+
+
+# num = 2
+# result = '홀' if num %2 else '짝'
+# n =[]
+# for i in range(1, 4):
+#     n.append(i ** 3)
+
+# print(n)
+
+# n = [1**3, 2**3, 3**3]
+# print(n)
+
+# print([x**3 for x in range(1,4)])
+# print({x: x**3 for x in range(1,4)}).
+
+
+a = '20230112'
+
+n = a[:4]
+b = a[4:6]
+
+print(int(n))
+
+if b in ['01','03','05','07','08','10','12']:
+    print(b)
+
+
