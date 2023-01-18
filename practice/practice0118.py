@@ -1,29 +1,22 @@
-# 10988 팰린드롬인지 확인하기
+# 1085 직사각형에서 탈출
+# x,y,w,h = map(int,input().split())
+# print(min(x,y,w - x,h - y)) 
 
-# n = input()
+# 1259 팰린드롬수
 
-# if n[::1] == n[::-1]:
-#     print(1)
-# else:
-#     print(0)
+# while 1:
+#     n = input()
+#     if n == '0':
+#         break
+#     if n == n[::-1]:
+#         print('yes')
+#     else:
+#         print('no')
 
-# 2789 유학금지
+# swea 2063 중간값찾기
+# t = int(input())
+# n = list(map(int,input().split()))
+# print(sorted(n)[(t//2)])
 
-# n = input()
-# m = []
-
-# for x in n:
-#         if x not in 'CAMBRIDGE':
-#             m.append(x)
-# print(''.join(m))
-
-# 2675 문자열 반복
-
-# n = []
-# for i in range(int(input())):
-#     a,b = input(). split()
-#     for x in b:
-#         n.append(x*int(a))
-#     print(''.join(n))
-#     n = []
-
+# swea 2058. 자릿수 더하기
+print(sum([int(i) for i in input()]))

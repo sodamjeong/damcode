@@ -31,6 +31,12 @@ while len(n) > 0:
     print(''.join(n[0:10]))
     del(n[0:10])
 
+# 2안 
+S = input()
+
+for i in range(0, len(S), 10):
+    print(S[i:i+10])
+
 # 2947 나무 조각
 
 n = [1, 2, 3, 4, 5]
@@ -49,3 +55,15 @@ while n != m:
                 a += 1
         except:
             pass
+
+#2안
+
+import sys
+input = sys.stdin.readline
+m = list(map(int, input().split()))
+
+while m != [1, 2, 3, 4, 5]:
+    for i in range(4):
+        if m[i] > m[i+1]:
+            m[i], m[i+1] = m[i+1], m[i] 
+            print(*m)
