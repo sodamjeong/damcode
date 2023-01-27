@@ -26,7 +26,7 @@ print(people-len(seats))
 
 # 10773 제로
 import sys
-input = sys.stdin.readline
+input = sys.stdin.readlinez
 n = []
 for i in range(int(input())):
     m  = int(input())
@@ -45,7 +45,7 @@ card = deque(range(1,int(sys.stdin.readline()) + 1))
 
 while len(card) > 1:
     print(card.popleft(),end=" ")
-    card.append(card.popleft())
+    card.append(card.popleft()) # card.rotate(-1)
 print(card[0])
 
 # 9012 괄호
@@ -62,10 +62,11 @@ for i in range(int(input())):
             if cnt < 0:
                 print('NO')
                 break
-    if cnt == 0:
-        print('YES')
-    elif cnt > 0:
-        print('NO')
+    else:
+        if cnt == 0:
+            print('YES')
+        elif cnt > 0:
+            print('NO')
 
 # 2안 스택을 사용한 방법
 for i in range(int(input())):
