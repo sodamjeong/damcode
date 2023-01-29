@@ -16,14 +16,44 @@
 #     print(*heapq.heappop(heap))
 
 # 11651 좌표 정렬하기 2
+# import sys
+# imput=sys.stdin.readline
+
+# n = int(input())
+# lst = []
+
+# for _ in range(n):
+#     x, y = map(int,input().split())
+#     lst.append((x,y))
+# lst.sort(key=lambda x:(x[1],x[0]))
+# for i in lst:
+#     print(*i)
+
+# 10814 나이순 정렬
+
+# judge = []
+# num = int(input())
+
+# for _ in range(num):
+#     a, n = input().split()
+#     judge.append((a,n))
+# judge.sort(key=lambda x:x[0])
+# age = 0
+# for _ in range(num):
+#     for i in judge:
+#         if int(i[0]) > age:
+#             print(*i)
+#     age = int(i[0])
+
 import sys
-imput=sys.stdin.readline
+input=sys.stdin.readline
 
-n = int(input())
-lst = []
+judge = []
 
-for _ in range(n):
-    x, y = map(int,input().split())
-    lst.append((x,y))
-lst2 = sorted(lst, key=lambda x:x[1])
-print(lst2)
+for i in range(int(input())):
+    a, n = input().split()
+    judge.append((i,int(a),n))
+judge.sort(key=lambda x:(x[1],x[0]))
+
+for i in judge:
+    print(*(i[1],i[2]))
