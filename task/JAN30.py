@@ -26,3 +26,4 @@ for i in range(4):
 for i in lst:
     cnt += i.count(1)
 print(cnt)
+    
