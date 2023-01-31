@@ -64,4 +64,5 @@ for x in range(n):
             cnt2 = 0
     if cnt2 > 1:
         h += 1
-print(w, h)
+print(w, h) 
+
