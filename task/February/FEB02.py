@@ -33,6 +33,9 @@ a1 = word[:word.index(a)+1][::-1] # a까지 길이의 단어 뒤집기
 b1 = word[word.index(a)+1:word.index(b)+1][::-1] # a이후 b까지 길이의 단어 뒤집기
 print(a1+b1+c[::-1]) # a1,b1 그리고 c를 뒤집은 단어를 합쳐서 출력
 #  틀림
+# 반례  = input aabbcc output accbba 정답 aabbcc
+# 이렇게 풀면 제일 작은 단어가 연속 두개 나올때 구분 할 수 가 없다.
+
 
 word = input()
 words = []
