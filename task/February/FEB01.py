@@ -44,6 +44,43 @@ while 1:
     if num :
         print(n)
         break
+# 2안 
+
+N = int(input())  # 100
+while True:
+    if len(str(N)) == str(N).count('4') + str(N).count('7'):
+        # 입력값 N을 string으로 형변환해서
+        # str(N)에 '4' + '7' 각각 카운트한 수의 합과 같다면
+        print(N)  # 출력
+        break
+
+    N -= 1  # 만약 위의 조건이 맞지 않다면 -1
+
+# 3안 
+
+n = int(input())
+for i in reversed(range(n+1)):
+    res = ''
+    for j in str(i):
+        if j == '4' or j == '7':
+            res += j
+    if res and i == int(res):
+        print(i)
+        break
+
+# 4안 
+
+import sys
+input=sys.stdin.readline
+N=int(input())
+num=4
+ans=0
+while num<= N:
+    if str(num).replace('7','').replace('4','')=='':
+        ans=str(num)
+    num+=1
+print(ans)
+
 
 # 1436 영화감독 숌
 
