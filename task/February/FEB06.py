@@ -5,9 +5,9 @@ happy = n.count(':-)')
 sad = n.count(':-(')
 if happy == sad == 0:
     print('none')
-elif happy - sad > 0:
+elif happy > sad:
     print('happy')
-elif happy - sad < 0:
+elif happy < sad:
     print('sad')
 else:
     print('unsure')
