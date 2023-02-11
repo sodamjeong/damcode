@@ -5,7 +5,6 @@
 # 1264 모음의 개수
 
 n = ['a','e','i','o','u']
-
 while 1:
     cnt = 0
     for i in (m:=input().lower()):
